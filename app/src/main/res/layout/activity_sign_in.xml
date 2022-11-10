@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".SignIn"
+    tools:deviceIds="wear">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+        app:layout_boxedEdges="all">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/orange"
+            android:ems="10"
+            android:hint="you@example.com"
+            android:textColor="@color/grey"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="15dp"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/emailtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="E-mail"
+            android:textSize="8sp"
+            android:textColor="@color/orange"
+            android:layout_marginLeft="28dp"/>
+        <TextView
+            android:id="@+id/passwordtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:text="Пароль"
+            android:textSize="8sp"
+            android:textColor="@color/orange"
+            android:layout_marginLeft="28dp"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="92dp"
+            android:backgroundTint="@color/orange"
+            android:ems="10"
+            android:textColor="@color/grey"
+            android:hint="Ваш пароль"
+            android:inputType="textPassword"
+            android:paddingBottom="15dp"
+            android:textSize="11dp"
+            />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/orange"
+            android:onClick="onClick"
+            android:text="Войти"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+    </FrameLayout>
+</androidx.wear.widget.BoxInsetLayout>

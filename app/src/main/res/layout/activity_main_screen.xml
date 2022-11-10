@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MainScreen"
+    tools:deviceIds="wear">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+        app:layout_boxedEdges="all">
+
+        <Button
+                android:id="@+id/imageButton2"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/imageButton3"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="102dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/chats"
+            android:layout_gravity=""/>
+        <Button
+                android:id="@+id/imageButton4"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/heart"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="95dp"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="75dp"
+            android:text="Обсуждения"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="107dp"
+            android:layout_marginTop="75dp"
+            android:text="Подборки"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="155dp"
+            android:text="Избранное"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </FrameLayout>
+</androidx.wear.widget.BoxInsetLayout>
